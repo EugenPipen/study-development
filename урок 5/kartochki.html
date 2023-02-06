@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartochki</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        main {
-  display: inline-block;
-  width: 30%;
-}
-aside {
-  display: inline-block;
-  width: 30%;
-}
-aside {
-  display: inline-block;
-  width: 30%;
-}
-
-@media screen and (max-width: 450px) {
-  main {
-    width: 100%;
-  }
-  aside {
-    width: 100%;
-  }
- aside {
-    width: 100%;
-  }
-}
-
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+      }
+      .life {
+        width: 30%;
+        border: 6px solid greenyellow;
+      }
+      .badge {
+         width: 100%;
+         text-align: center;
+      }
+      .badge img {
+         width: 100%;
+         height: auto
+      }
+      .text {
+        padding: 20px;
+        text-align: center;
+        color:black
+      }
+      @media screen and (max-width: 450px) {
+         .life { width: 100%}
+         }
     </style>
-</head>
+    </head>
 <body>
-<img skr="http://drabs.ru/images/stories/virtuemart/product/2360056.jpg" alt="Flash">
-<img skr="https://cutewallpaper.org/21/wallpapers-for-tablet/Collection-of-Beautiful-Wallpaper-For-Tablet-on-HDWallpapers-.jpg" alt="Superman">
-<img skr="http://gamerwall.pro/uploads/posts/2021-12/1638445452_18-gamerwall-pro-p-znak-mstitelei-marvel-krasivie-oboi-21.jpg" alt="Avengers">
-    
+  <div class="container">
+  <div class="life">
+  <div class="badge">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx6IzCGSd97gVtaKJkUbBq915igviADzEHCA&usqp=CAU" alt="Job">
+  </div>
+<div class="text"> <big>Работёнка</big> </div>
+</div>  
+<div class="life">
+  <div class="badge">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrhOESppl5Ygfr9r71xwTj79Rx_K-NrN0QQ&usqp=CAU" alt="rest">
+</div>      
+<div class="text"><big>Отдых</big> </div>
+</div>  
+<div class="life">
+  <div class="badge">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUns3O-GjOiNCSA-7Z9Jbinu-TBCmQuBnhwA&usqp=CAU" alt="leisure">      
+</div>
+<div class="text"><big>Досуг</big> </div> 
+</div>  
+</div>
 </body>
 </html>
