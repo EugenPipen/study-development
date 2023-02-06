@@ -8,10 +8,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 15px;
+        gap: 10px;
       }
       .life {
         width: 30%;
+        border: 6px solid black;
       }
       .badge {
          width: 100%;
@@ -27,8 +28,12 @@
         color:black
       }
       @media screen and (max-width: 450px) {
-  .life{
+  .life {
     width: 100%;
+  }
+  .badge {width: 100%;
+  }
+  .badge img { width: 100%;
   }
 }
     </style>
