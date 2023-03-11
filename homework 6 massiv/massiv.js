@@ -49,5 +49,6 @@ menu.forEach(function (element) {
 //Посчитать прибыль с каждого блюда
 let sum =  Soup.price-Soup.purchasePrice+Pizza.price-Pizza.purchasePrice+Caesar.price-Caesar.purchasePrice
 //удалить все элементы из массива кроме одного
+menu.splice(1);
 
 
