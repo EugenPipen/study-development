@@ -27,11 +27,11 @@ let menu = [Soup,Pizza,Caesar];
 alert(`Созданный массив из объектов для меню: ${JSON.stringify(menu)}`);
 //Удалить один обьект из массива
 menu.splice(1,1);
-alert(`Удалили одно блюдо из меню: ${JSON.stringify(menu)}`);
+alert(`Удалил одно блюдо из меню: ${JSON.stringify(menu)}`);
 //Добавить этот блюдо обратно на первое место, но уберать один из ингредиентов
 delete Soup.ingredients.potato;
 menu.unshift(Soup);
-alert(`Добавили обратно блюдо, которое удалили но без одного ингредиента: ${JSON.stringify(menu)}`);
+alert(`Добавил обратно блюдо, которое удалил но без одного ингредиента: ${JSON.stringify(menu)}`);
 //указать закупочную цену и цену продажи
 menu.forEach(function (element) {
     switch  (element.dish ) {
@@ -51,7 +51,7 @@ menu.forEach(function (element) {
                 alert("Error");
         }
     });
-    alert(`Добавили каджому блюду в меню по новым параметрам(цена и время приготовления): ${JSON.stringify(menu)}`);
+    alert(`Добавил каджому блюду в меню по новым параметрам(цена и время приготовления): ${JSON.stringify(menu)}`);
 //Посчитать прибыль с каждого блюда
 let sum =  Soup.price-Soup.purchasePrice+Pizza.price-Pizza.purchasePrice+Caesar.price-Caesar.purchasePrice
 alert(`Сумма заказа: ${sum} $`);
